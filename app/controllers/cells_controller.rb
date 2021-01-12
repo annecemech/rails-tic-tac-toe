@@ -5,4 +5,12 @@ class CellsController < ApplicationController
     @cell.save
     redirect_to game_path(@cell.game)
   end
+
+  def empty_cell?
+    @cell.content == ''
+  end
+
+  def computer_plays
+  end
+
 end
