@@ -1,0 +1,18 @@
+<div class="container-fluid statistics py-3">
+  <div class="score-box">
+    <div class="score-item">
+      <h4>Number of games</h4>
+    </div>
+    <div class="score">
+      <h2><span class="badge bg-danger"><%= current_user.games.select { |g| g.finished == true }.count %></span></h2>
+    </div>
+  </div>
+  <div class="score-box">
+    <div class="score-item">
+      <h4>Number of victories</h4>
+    </div>
+    <div class="score">
+      <h2><span class="badge bg-danger"><%= current_user.score %></span></h2>
+    </div>
+  </div>
+</div>
