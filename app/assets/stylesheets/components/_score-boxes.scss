@@ -1,6 +1,14 @@
 .statistics{
-  background-color: #231651;
+  background-color: $blue;
   color: #F4FFFD;
+}
+
+.statistics-title{
+  background-color: $green;
+  color: $blue;
+  font-weight: bolder;
+  border-radius: 2px;
+  padding: 0.1rem 0.5rem;
 }
 
 .score-box{
