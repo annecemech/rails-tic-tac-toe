@@ -1,10 +1,12 @@
-<div class="container">
-  <h1 class="text-center">Your game</h1>
+ <div class="statistics">
+  <%= render "statistics"%>
+ </div>
+<div class="container pt-5">
   <div class="d-flex justify-content-center">
-    <div class="cards">
+    <div class="grids">
       <% @cells.each do |cell| %>
-        <%= link_to game_cell_path(@game, cell), method: 'put' do %>
-          <div class="card-category">
+        <%= link_to game_cell_path(@game, cell), method: 'put', class: "cell cell-#{cell.content}", :remote => true do %>
+          <div class="grid-category grid-category-<%= cell.content %>">
           <%= cell.content%>
           </div>
         <% end %>
@@ -12,7 +14,7 @@
     </div>
   </div>
   <div class="text-center mt-5">
-  <%= link_to "Play again", new_game_path, class:"btn btn-primary" %>
+    <%= render "winner"%>
   </div>
 </div>
 

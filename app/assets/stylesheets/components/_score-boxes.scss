@@ -1,0 +1,35 @@
+.statistics{
+  background-color: $blue;
+  color: #F4FFFD;
+}
+
+.statistics-title{
+  background-color: $green;
+  color: $blue;
+  font-weight: bolder;
+  border-radius: 2px;
+  padding: 0.1rem 0.5rem;
+}
+
+.score-box{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 310px;
+  h4{
+   font-weight: 900;
+  }
+}
+
+.win-box{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 310px;
+  h2{
+   font-weight: 900;
+   margin-bottom: 0;
+  }
+}

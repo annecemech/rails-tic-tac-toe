@@ -1,0 +1,13 @@
+<div class="text-uppercase text-center pt-3">
+      <h4><span class="statistics-title"><i class="fas fa-trophy"></i> Your statistics</span></h4>
+</div>
+<div class="container-fluid statistics my-2 pb-1">
+  <div class="score-box">
+    <div class="score-item">
+      <h4>Victories</h4>
+    </div>
+    <div class="score">
+      <h2><span class="badge bg-danger"><%= current_user.score %></span> / <span class="badge bg-danger"><%= current_user.games.select { |g| g.finished == true }.count %></span> </h2>
+    </div>
+  </div>
+</div>

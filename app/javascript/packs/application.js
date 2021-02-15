@@ -31,4 +31,11 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+
+  const tictacBox = document.querySelectorAll('.cell');
+
+  tictacBox.forEach(element => {
+      console.log(element.innerText);
+    });
+
 });

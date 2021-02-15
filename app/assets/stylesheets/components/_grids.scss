@@ -1,0 +1,41 @@
+.grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  width: 310px;
+}
+
+
+.grid-category {
+  background-color: $blue;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.grid-category-O {
+  background-color: $green;
+}
+
+.grid-category-X {
+  background-color: $red;
+}
+.cell:hover{
+  text-decoration: none;
+}
+
+.cell-O{
+  pointer-events: none;
+}
+
+.cell-X{
+  pointer-events: none;
+}
+

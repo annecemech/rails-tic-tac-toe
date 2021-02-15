@@ -1,0 +1,17 @@
+<div class="win-box mb-4">
+  <div class="score-box">
+    <% if @game.winner == "It's a tie" %>
+    <h2>It's a tie !</h2>
+    <% elsif @game.winner != '' %>
+    <h2><%= @game.winner %> win !</h2>
+  <% end %>
+  </div>
+  <div class="score-box">
+    <% if @game.finished %>
+    <%= link_to "Play again", replay_path, class:"btn btn-danger" %>
+    <% end %>
+  </div>
+</div>
+
+
+
